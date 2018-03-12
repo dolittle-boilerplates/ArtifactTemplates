@@ -1,8 +1,8 @@
 using Dolittle.Commands;
 
-namespace %namespace%
+namespace {{namespace}}
 {
-  public class %name% : ICommand
+  public class {{name}} : ICommand
   {
   }
 }
