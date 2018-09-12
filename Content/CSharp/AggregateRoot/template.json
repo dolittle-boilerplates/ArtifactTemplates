@@ -1,0 +1,6 @@
+{
+  "name": "Aggregate Root template",
+  "type": "aggregateRoot",
+  "description": "Creates an Aggregate Root",
+  "language": "csharp"
+}

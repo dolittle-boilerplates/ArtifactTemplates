@@ -1,5 +1,6 @@
 {
-   "name": "event",
+   "name": "Event template",
+   "type": "event",
    "description": "Creates an event",
    "language": "csharp"
 }

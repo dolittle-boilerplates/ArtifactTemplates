@@ -1,5 +1,6 @@
 {
-   "name": "command",
+   "name": "Command template",
+   "type": "command",
    "description": "Creates a command",
    "language": "csharp"
 }

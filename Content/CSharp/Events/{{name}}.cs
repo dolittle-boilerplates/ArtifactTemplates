@@ -2,7 +2,7 @@ using Dolittle.Events;
 
 namespace {{namespace}}
 {
-  public class {{name}} : IEvent
-  {
-  }
+    public class {{name}} : IEvent
+    {
+    }
 }

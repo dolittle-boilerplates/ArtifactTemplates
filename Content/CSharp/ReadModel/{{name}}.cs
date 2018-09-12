@@ -2,7 +2,7 @@ using Dolittle.ReadModels;
 
 namespace {{namespace}}
 {
-  public class {{name}} : IReadModel
-  {
-  }
+    public class {{name}} : IReadModel
+    {
+    }
 }

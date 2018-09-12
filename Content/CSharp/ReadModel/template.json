@@ -1,5 +1,6 @@
 {
-   "name": "readModel",
+   "name": "Read Model Template"
+   "type": "readModel",
    "description": "Creates a Read Model",
    "language": "csharp"
 }
