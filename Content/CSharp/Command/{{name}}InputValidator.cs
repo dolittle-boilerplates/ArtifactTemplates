@@ -1,8 +1,8 @@
-using Dolittle.Commands;
+using Dolittle.Commands.Validation;
 
 namespace {{namespace}}
 {
-  public class {{name}} : ICommand
+  public class {{name}}InputValidator : CommandInputValidatorFor<{{name}}>
   {
   }
 }
