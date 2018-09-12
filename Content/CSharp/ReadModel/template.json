@@ -1,0 +1,5 @@
+{
+   "name": "readModel",
+   "description": "Creates a Read Model",
+   "language": "csharp"
+}
