@@ -1,4 +1,4 @@
-using Dolittle.Readmodels;
+using Dolittle.ReadModels;
 
 namespace {{namespace}}
 {
