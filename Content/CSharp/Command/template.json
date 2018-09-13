@@ -1,0 +1,11 @@
+{
+   "name": "Command template",
+   "type": "command",
+   "description": "Creates a command",
+   "language": "csharp",
+   "includedFiles": [
+    "{{name}}.cs",
+    "{{name}}BusinessValidator.cs",
+    "{{name}}InputValidator.cs"
+    ]
+}
