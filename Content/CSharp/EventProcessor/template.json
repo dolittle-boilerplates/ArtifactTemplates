@@ -1,0 +1,9 @@
+{
+   "name": "EventProcessor template",
+   "type": "eventProcessor",
+   "description": "Creates an event processor",
+   "language": "csharp",
+   "includedFiles": [
+       "{{name}}.cs"
+   ]
+}
