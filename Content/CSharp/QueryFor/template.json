@@ -1,0 +1,9 @@
+{
+   "name": "QueryFor Template",
+   "type": "queryFor",
+   "description": "Creates a Query for a particular readmodel",
+   "language": "csharp",
+   "includedFiles": [
+    "{{name}}.cs"
+    ]
+}

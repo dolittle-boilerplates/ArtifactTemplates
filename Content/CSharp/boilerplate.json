@@ -1,8 +1,8 @@
 {
     "name": "Artifact file templates for C#",
+    "language": "csharp",
     "type": "artifacts",
     "description": "All the file templates for C#",
-    "language": "csharp",
     "options": [
         {
             "description": "The full namespace of the artifact",
