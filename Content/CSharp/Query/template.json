@@ -1,0 +1,9 @@
+{
+   "name": "Query Template",
+   "type": "query",
+   "description": "Creates a Query",
+   "language": "csharp",
+   "includedFiles": [
+    "{{name}}.cs"
+    ]
+}
