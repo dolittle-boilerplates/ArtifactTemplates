@@ -1,0 +1,9 @@
+{
+   "name": "CommandHandler template",
+   "type": "commandHandler",
+   "description": "Creates a command handler",
+   "language": "csharp",
+   "includedFiles": [
+       "{{name}}.cs"
+   ]
+}
