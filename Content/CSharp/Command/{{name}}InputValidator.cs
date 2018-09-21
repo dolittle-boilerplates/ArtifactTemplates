@@ -4,5 +4,6 @@ namespace {{namespace}}
 {
     public class {{name}}InputValidator : CommandInputValidatorFor<{{name}}>
     {
+        
     }
 }

@@ -6,7 +6,7 @@ namespace {{namespace}}
 {
     public class {{name}} : IQuery
     {
-
+        
         public IQueryable Query
         {
             get
