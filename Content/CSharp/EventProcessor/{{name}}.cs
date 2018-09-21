@@ -1,4 +1,7 @@
 using Dolittle.Events.Processing;
+{{#each imports}}
+using {{namespace}};
+{{/each}}
 
 namespace {{namespace}}
 {

@@ -1,4 +1,7 @@
 using Dolittle.Commands.Handling;
+{{#each imports}}
+using {{namespace}};
+{{/each}}
 
 namespace {{namespace}}
 {
