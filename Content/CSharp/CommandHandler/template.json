@@ -5,5 +5,25 @@
    "language": "csharp",
    "includedFiles": [
        "{{name}}.cs"
-   ]
+   ],
+   "dependencies": [
+        {
+            "type": "discover",
+            "name": "commandChoices",
+            "discoverType": "multipleFiles",
+            "fileMatch": ".*\\.cs$",
+            "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*ICommand",
+            "withNamespace": true,
+            "milestone": ".*\\.csproj$"
+            
+        },
+        {
+            "type": "prompt",
+            "promptType": "checkbox",
+            "name": "commands",
+            "message": "Choose a command: ",
+            "pageSize": 10,
+            "choices": "commandChoices"
+        }
+    ]
 }

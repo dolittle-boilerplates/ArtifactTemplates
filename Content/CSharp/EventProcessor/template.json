@@ -1,9 +1,31 @@
 {
-   "name": "EventProcessor template",
-   "type": "eventProcessor",
-   "description": "Creates an event processor",
-   "language": "csharp",
-   "includedFiles": [
-       "{{name}}.cs"
-   ]
-}
+    "name": "EventProcessor template",
+    "type": "eventProcessor",
+    "description": "Creates an event processor",
+    "language": "csharp",
+    "includedFiles": [
+        "{{name}}.cs"
+    ],
+    "dependencies": [
+         {
+             "type": "discover",
+             "name": "eventChoices",
+             "discoverType": "multipleFiles",
+             "fileMatch": ".*\\.cs$",
+             "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*IEvent",
+             "withNamespace": true,
+             "milestone": ".*\\.csproj$",
+             "fromFolders": "Events"
+             
+         },
+         {
+             "type": "prompt",
+             "promptType": "checkbox",
+             "name": "events",
+             "message": "Choose an event: ",
+             "pageSize": 10,
+             "choices": "eventChoices"
+         }
+     ]
+ }
+ 
