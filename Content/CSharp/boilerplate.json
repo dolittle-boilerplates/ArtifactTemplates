@@ -2,5 +2,13 @@
     "name": "Artifact file templates for C#",
     "language": "csharp",
     "type": "artifacts",
-    "description": "All the file templates for C#"
+    "description": "All the file templates for C#",
+    "dependencies": [
+        {
+            "type": "discover",
+            "name": "namespace",
+            "discoverType": "namespace",
+            "milestone": ".*\\.csproj$" 
+        }
+    ]
 }

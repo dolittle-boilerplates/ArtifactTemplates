@@ -5,5 +5,24 @@
    "language": "csharp",
    "includedFiles": [
     "{{name}}.cs"
+    ],
+    "dependencies": [
+        {
+            "type": "discover",
+            "name": "readModelChoices",
+            "discoverType": "multipleFiles",
+            "fileMatch": ".*\\.cs$",
+            "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*IReadModel",
+            "withNamespace": true,
+            "milestone": ".*\\.csproj$"
+        },
+        {
+            "type": "prompt",
+            "promptType": "rawlist",
+            "name": "readModel",
+            "message": "Choose a read model",
+            "choices": "readModelChoices" ,
+            "customInput": "Write ReadModel name: "
+        }
     ]
 }
