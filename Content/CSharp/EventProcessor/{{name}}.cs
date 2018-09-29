@@ -6,7 +6,7 @@ namespace {{namespace}}
     {
         {{#each events}}
         [EventProcessor(INSERT_GUID)]
-        void Process({{this}} @event)
+        public void Process({{this}} @event)
         {
 
         }
