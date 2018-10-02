@@ -1,10 +1,11 @@
 using Dolittle.Domain;
+using Dolittle.Runtime.Events;
 
 namespace {{namespace}}
 {
     public class {{name}} : AggregateRoot
     {
-        public {{name}}(System.Guid id) : base(id)
+        public {{name}}(EventSourceId id) : base(id)
         { 
             
         }
