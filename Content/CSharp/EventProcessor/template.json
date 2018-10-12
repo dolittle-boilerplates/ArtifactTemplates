@@ -16,8 +16,16 @@
              "withNamespace": true,
              "milestone": ".*\\.csproj$",
              "fromFolders": "Events"
-             
          },
+         {
+            "type": "discover",
+            "name": "readModelChoices",
+            "discoverType": "multipleFiles",
+            "fileMatch": ".*\\.cs$",
+            "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*IReadModel",
+            "withNamespace": true,
+            "milestone": ".*\\.csproj$"
+        },
          {
              "type": "prompt",
              "promptType": "checkbox",
@@ -25,7 +33,15 @@
              "message": "Choose an event: ",
              "pageSize": 10,
              "choices": "eventChoices"
-         }
+         },
+         {
+            "type": "prompt",
+            "promptType": "checkbox",
+            "name": "readModels",
+            "message": "Choose read models: ",
+            "pageSize": 10,
+            "choices": "readModelChoices"
+        }
      ]
  }
  
