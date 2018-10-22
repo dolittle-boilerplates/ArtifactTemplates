@@ -13,7 +13,7 @@ namespace {{namespace}}
         {{/each}}
 
         public {{name}}(
-            {{#each readModels}}{{#if @first}}IReadModelRepositoryFor<{{this}}> repositoryFor{{this}},{{/if}}            {{#if @last}}IReadModelRepositoryFor<{{this}}> repositoryFor{{this}}{{/if}}
+            {{#each readModels}}{{#if @first}}IReadModelRepositoryFor<{{this}}> repositoryFor{{this}}{{#unless @last}},{{/unless}}{{/if}}            {{#if @last}}{{#unless @first}}IReadModelRepositoryFor<{{this}}> repositoryFor{{this}}{{/unless}}{{/if}}
             {{/each}}
         )
         {
@@ -26,9 +26,7 @@ namespace {{namespace}}
         {{#each events}}
         [EventProcessor("{{createGuid}}")]
         public void Process({{this}} @event)
-        {
-
-        }
+        { }
         
         {{/each}}
     }
