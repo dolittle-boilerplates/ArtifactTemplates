@@ -26,7 +26,9 @@ namespace {{namespace}}
         {{#each events}}
         [EventProcessor("{{createGuid}}")]
         public void Process({{this}} @event)
-        { }
+        { 
+            
+        }
         
         {{/each}}
     }
