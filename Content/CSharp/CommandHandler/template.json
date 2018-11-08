@@ -15,15 +15,31 @@
             "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*ICommand",
             "withNamespace": true,
             "milestone": ".*\\.csproj$"
-            
+        },
+        {
+            "type": "discover",
+            "name": "aggregateRootChoices",
+            "discoverType": "multipleFiles",
+            "fileMatch": ".*\\.cs$",
+            "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*AggregateRoot",
+            "withNamespace": true,
+            "milestone": ".*\\.csproj$"
         },
         {
             "type": "prompt",
             "promptType": "checkbox",
             "name": "commands",
-            "message": "Choose a command: ",
+            "message": "Choose commands to handle: ",
             "pageSize": 10,
             "choices": "commandChoices"
-        }
+        },
+        {
+           "type": "prompt",
+           "promptType": "checkbox",
+           "name": "aggregateRoots",
+           "message": "Choose aggregate roots (event sources): ",
+           "pageSize": 10,
+           "choices": "aggregateRootChoices"
+       }
     ]
 }
