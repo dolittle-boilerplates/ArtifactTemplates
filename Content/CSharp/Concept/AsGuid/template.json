@@ -1,0 +1,11 @@
+{
+   "name": "Concept as Guid template",
+   "type": "conceptAsGuid",
+   "description": "Creates a concept as guid",
+   "language": "csharp",
+   "includedFiles": [
+       "{{name}}.cs"
+   ],
+   "dependencies": [
+    ]
+}
