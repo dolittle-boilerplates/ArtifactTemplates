@@ -1,0 +1,11 @@
+{
+   "name": "Concept as int template",
+   "type": "conceptAsInt",
+   "description": "Creates a concept as int",
+   "language": "csharp",
+   "includedFiles": [
+       "{{name}}.cs"
+   ],
+   "dependencies": [
+    ]
+}

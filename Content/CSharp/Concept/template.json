@@ -1,0 +1,17 @@
+{
+   "name": "Concept template",
+   "type": "concept",
+   "description": "Creates a concept",
+   "language": "csharp",
+   "includedFiles": [
+       "{{name}}.cs"
+   ],
+   "dependencies": [
+        {
+            "type": "prompt",
+            "promptType": "input",
+            "name": "conceptType",
+            "message": "Concept as (Concept Type):"
+        }
+    ]
+}
