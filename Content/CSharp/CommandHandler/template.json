@@ -1,6 +1,7 @@
 {
    "name": "CommandHandler template",
    "type": "commandHandler",
+   "area": "domain",
    "description": "Creates a command handler",
    "language": "csharp",
    "includedFiles": [
@@ -8,38 +9,28 @@
    ],
    "dependencies": [
         {
+            "description": "The commands to generate command handlers for",
+            "name": "commands",
             "type": "discover",
-            "name": "commandChoices",
             "discoverType": "multipleFiles",
+            "userInput": "chooseMultiple",
+            "message": "Choose commands to handle",
             "fileMatch": ".*\\.cs$",
             "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*ICommand",
             "withNamespace": true,
             "milestone": ".*\\.csproj$"
         },
         {
+            "description": "The aggregate roots (event sources)",
+            "name": "aggregateRoots",
             "type": "discover",
-            "name": "aggregateRootChoices",
             "discoverType": "multipleFiles",
+            "userInput": "chooseMultiple",
+            "message": "Choose aggregate roots (event sources): ",
             "fileMatch": ".*\\.cs$",
             "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*AggregateRoot",
             "withNamespace": true,
             "milestone": ".*\\.csproj$"
-        },
-        {
-            "type": "prompt",
-            "promptType": "checkbox",
-            "name": "commands",
-            "message": "Choose commands to handle: ",
-            "pageSize": 10,
-            "choices": "commandChoices"
-        },
-        {
-           "type": "prompt",
-           "promptType": "checkbox",
-           "name": "aggregateRoots",
-           "message": "Choose aggregate roots (event sources): ",
-           "pageSize": 10,
-           "choices": "aggregateRootChoices"
-       }
+        }
     ]
 }

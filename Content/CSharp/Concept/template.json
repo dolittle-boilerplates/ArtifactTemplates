@@ -1,6 +1,7 @@
 {
    "name": "Concept template",
    "type": "concept",
+   "area": "concepts",
    "description": "Creates a concept",
    "language": "csharp",
    "includedFiles": [
@@ -8,9 +9,10 @@
    ],
    "dependencies": [
         {
-            "type": "prompt",
-            "promptType": "input",
+            "description": "The type of the Concept",
             "name": "conceptType",
+            "type": "userInput",
+            "promptType": "input",
             "message": "Concept as (Concept Type):"
         }
     ]

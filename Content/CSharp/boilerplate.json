@@ -5,8 +5,16 @@
     "description": "All the file templates for C#",
     "dependencies": [
         {
-            "type": "discover",
+            "description": "The name of the artifact",
+            "name": "name",
+            "type": "userInput",
+            "message": "The name of the artifact",
+            "userInputType": "argument"
+        },
+        {
+            "description": "The namespace of the artifact",
             "name": "namespace",
+            "type": "discover",
             "discoverType": "namespace",
             "milestone": ".*\\.csproj$" 
         }
