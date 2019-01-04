@@ -12,8 +12,8 @@
             "description": "The type of the Concept",
             "name": "conceptType",
             "type": "userInput",
-            "promptType": "input",
-            "message": "Concept as (Concept Type):"
+            "userInputType": "input",
+            "promptMessage": "Concept as (Concept Type):"
         }
     ]
 }
