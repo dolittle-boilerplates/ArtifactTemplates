@@ -1,6 +1,7 @@
 {
     "name": "EventProcessor template",
     "type": "eventProcessor",
+    "area": "read",
     "description": "Creates an event processor",
     "language": "csharp",
     "includedFiles": [
@@ -8,39 +9,29 @@
     ],
     "dependencies": [
          {
+             "description": "The events that should be generated processors for",
+             "name": "events",
              "type": "discover",
-             "name": "eventChoices",
              "discoverType": "multipleFiles",
+             "userInputType": "chooseMultiple",
+             "promptMessage": "Choose events to process", 
              "fileMatch": ".*\\.cs$",
              "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*IEvent",
              "withNamespace": true,
              "milestone": ".*\\.csproj$",
-             "fromFolders": "Events"
+             "fromArea": "events"
          },
          {
+            "description": "The read models that is manipulated by the events",
+            "name": "readModels",
             "type": "discover",
-            "name": "readModelChoices",
             "discoverType": "multipleFiles",
+            "userInputType": "chooseMultiple",
+            "promptMessage": "Choose read models",
             "fileMatch": ".*\\.cs$",
             "contentMatch": ".*public\\s*class\\s*(\\w*)\\s*:\\s*IReadModel",
             "withNamespace": true,
             "milestone": ".*\\.csproj$"
-        },
-         {
-             "type": "prompt",
-             "promptType": "checkbox",
-             "name": "events",
-             "message": "Choose an event: ",
-             "pageSize": 10,
-             "choices": "eventChoices"
-         },
-         {
-            "type": "prompt",
-            "promptType": "checkbox",
-            "name": "readModels",
-            "message": "Choose read models: ",
-            "pageSize": 10,
-            "choices": "readModelChoices"
         }
      ]
  }

@@ -1,6 +1,7 @@
 {
    "name": "Concept as int template",
    "type": "conceptAsInt",
+   "area": "concepts",
    "description": "Creates a concept as int",
    "language": "csharp",
    "includedFiles": [
