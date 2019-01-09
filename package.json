@@ -1,0 +1,18 @@
+{
+  "name": "@dolittle/boilerplates.artifact-templates",
+  "version": "1.0.0",
+  "description": "Standard artifacts boilerplate and templates",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dolittle-boilerplates/ArtifactTemplates.git"
+  },
+  "keywords": [
+    "artifactTemplates"
+  ],
+  "author": "Dolittle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dolittle-boilerplates/ArtifactTemplates/issues"
+  },
+  "homepage": "https://github.com/dolittle-boilerplates/ArtifactTemplates#readme"
+}
