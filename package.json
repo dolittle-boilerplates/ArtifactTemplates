@@ -1,13 +1,13 @@
 {
   "name": "@dolittle/boilerplates.artifact-templates",
   "version": "1.0.0",
-  "description": "Standard artifacts boilerplate and templates",
+  "description": "Artifacts boilerplate and artifact templates for the Dolittle platform",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dolittle-boilerplates/ArtifactTemplates.git"
   },
   "keywords": [
-    "artifactTemplates"
+    "dolittle", "boilerplates", "artifact-templates"
   ],
   "author": "Dolittle",
   "license": "MIT",
