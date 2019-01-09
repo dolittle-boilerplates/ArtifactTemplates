@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/dolittle-boilerplates/ArtifactTemplates/issues"
   },
-  "homepage": "https://github.com/dolittle-boilerplates/ArtifactTemplates#readme"
+  "publishConfig": {
+      "access": "public"
+  },
+  "homepage": "https://dolittle.io"
 }
