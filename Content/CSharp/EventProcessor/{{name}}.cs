@@ -2,6 +2,7 @@ using Dolittle.Events.Processing;
 {{#if readModels}}
 using Dolittle.ReadModels;
 {{/if}}
+{{{addUniqueCSharpNamespace events}}}
 
 namespace {{namespace}}
 {
@@ -9,23 +10,23 @@ namespace {{namespace}}
     {
         {{#if readModels}}
         {{#each readModels}}
-        readonly IReadModelRepositoryFor<{{this}}> _repositoryFor{{this}};
+        readonly IReadModelRepositoryFor<{{this.value}}> _repositoryFor{{this.value}};
         {{/each}}
 
         public {{name}}(
-            {{#each readModels}}{{#if @first}}IReadModelRepositoryFor<{{this}}> repositoryFor{{this}}{{#unless @last}},{{/unless}}{{/if}}            {{#if @last}}{{#unless @first}}IReadModelRepositoryFor<{{this}}> repositoryFor{{this}}{{/unless}}{{/if}}
+            {{#each readModels}}{{#if @first}}IReadModelRepositoryFor<{{this.value}}> repositoryFor{{this.value}}{{#unless @last}},{{/unless}}{{/if}}            {{#if @last}}{{#unless @first}}IReadModelRepositoryFor<{{this.value}}> repositoryFor{{this.value}}{{/unless}}{{/if}}
             {{/each}}
         )
         {
             {{#each readModels}}
-            _repositoryFor{{this}} = repositoryFor{{this}};
+            _repositoryFor{{this.value}} = repositoryFor{{this.value}};
             {{/each}}
         }
         {{/if}}
         
         {{#each events}}
         [EventProcessor("{{createGuid}}")]
-        public void Process({{this}} @event)
+        public void Process({{this.value}} @event)
         { 
             
         }

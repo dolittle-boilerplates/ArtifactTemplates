@@ -1,6 +1,6 @@
 {
   "name": "@dolittle/boilerplates.artifact-templates",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Artifacts boilerplate and artifact templates for the Dolittle platform",
   "repository": {
     "type": "git",
