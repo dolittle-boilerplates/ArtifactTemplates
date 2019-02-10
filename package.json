@@ -1,7 +1,7 @@
 {
-  "name": "@dolittle/boilerplates.artifact-templates",
-  "version": "1.1.0",
-  "description": "Artifacts boilerplate and artifact templates for the Dolittle platform",
+  "name": "@dolittle/boilerplates.artifacts.csharp",
+  "version": "2.0.0",
+  "description": "C# artifacts boilerplate and artifact templates for the Dolittle platform",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dolittle-boilerplates/ArtifactTemplates.git"
@@ -9,6 +9,9 @@
   "keywords": [
     "dolittle", "boilerplates", "artifact-templates"
   ],
+  "dolittle": {
+    "tooling": "5"
+  },
   "author": "Dolittle",
   "license": "MIT",
   "bugs": {
