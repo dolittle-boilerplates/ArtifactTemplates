@@ -1,6 +1,6 @@
 {
   "name": "@dolittle/boilerplates.artifacts.csharp",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "C# artifacts boilerplate and artifact templates for the Dolittle platform",
   "repository": {
     "type": "git",
